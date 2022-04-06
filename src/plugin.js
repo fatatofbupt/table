@@ -114,7 +114,10 @@ export default class TableBlock {
    */
   renderSettings() {
     const wrapper = $.make('div', TableBlock.CSS.settingsWrapper);
-
+    //fatcat
+    const hint = $.make('div', "ssp-ce-tune-alignment-hint");
+    hint.innerHTML = `样式`;
+    wrapper.appendChild(hint);
     const tunes = [ {
       name: this.api.i18n.t('With headings'),
       icon: withHeadings,
